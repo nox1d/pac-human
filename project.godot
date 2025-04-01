@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="pac-human"
+run/main_scene="uid://dsbhxckp8vtjy"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
