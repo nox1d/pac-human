@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 100.0
+const SPEED = 200.0
 
 func _ready():
 	await get_tree().create_timer(3).timeout
@@ -9,6 +9,11 @@ func _ready():
 
 func _physics_process(delta):
 	var direction = Input.get_vector("walk_left", "walk_right", "walk_up", "walk_down")
+	if direction.y != 0:
+		direction.x = 0
+	else:
+		direction.y = 0
+	
 	direction = direction.normalized()
 	
 	if direction:
