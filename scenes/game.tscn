@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://dsbhxckp8vtjy"]
+[gd_scene load_steps=6 format=4 uid="uid://dsbhxckp8vtjy"]
 
 [ext_resource type="PackedScene" uid="uid://db1vlfu7jahs" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://bkgbiv7avb4vf" path="res://assets/sprites/world_tileset.png" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://cub123ctnswkh" path="res://scenes/coin.tscn" id="3_lnu2h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("1_yqjtg")
@@ -168,3 +169,12 @@ tile_set = SubResource("TileSet_lbhrr")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
+
+[node name="Coin" parent="." instance=ExtResource("3_lnu2h")]
+position = Vector2(-48, 23)
+
+[node name="Coin2" parent="." instance=ExtResource("3_lnu2h")]
+position = Vector2(-30, 47)
+
+[node name="Coin3" parent="." instance=ExtResource("3_lnu2h")]
+position = Vector2(17, 45)
