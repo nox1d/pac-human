@@ -1,5 +1,6 @@
 extends Area2D
 @onready var animation_player = $AnimationPlayer
+@onready var game_manager = %GameManager
 
 
 func _ready():
@@ -7,5 +8,5 @@ func _ready():
 
 
 func _on_body_entered(body):
-	print("coin")
+	game_manager.add_score()
 	animation_player.play("pickup")
