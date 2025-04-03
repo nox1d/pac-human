@@ -15,6 +15,10 @@ run/main_scene="uid://dsbhxckp8vtjy"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*res://scenes/game_manager.tscn"
+
 [input]
 
 walk_right={
