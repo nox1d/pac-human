@@ -28,7 +28,7 @@ func _physics_process(delta):
 			pass
 		else:
 			animation_tree.set("parameters/walk/blend_position", direction)
-			print(direction)
+			#print(direction)
 		
 		if direction:
 			velocity = direction * SPEED
